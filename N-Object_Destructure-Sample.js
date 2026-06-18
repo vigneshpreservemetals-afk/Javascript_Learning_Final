@@ -125,27 +125,75 @@
 //Sample 8 
 
 
-const company = {
-  name: "Tech Corp",
-  department: {
-    name: "Design",
-    manager: {
-      name: "John"
-    }
-  }
-};
+// const company = {
+//   name: "Tech Corp",
+//   department: {
+//     name: "Design",
+//     manager: {
+//       name: "John"
+//     }
+//   }
+// };
 
 // const {name} = company;
 // const {department} = company;
 // const {manager}    = department
 
-const {name,department} = company;
-const {name:departmentName,manager} = department;
-const {name:managerName}            = manager;
+// const {name,department} = company;
+// const {name:departmentName,manager} = department;
+// const {name:managerName}            = manager;
 
-console.log("CompanyName===>",name)
-console.log("DepartmentName===>",departmentName)
-console.log("CompanyName===>",managerName)
+// console.log("CompanyName===>",name)
+// console.log("DepartmentName===>",departmentName)
+// console.log("CompanyName===>",managerName)
+
+// sample 9
+
+const employees = [
+  {
+    id: 1,
+    name: "John",
+    department: "Design",
+    salary: 60000,
+    projects: ["UI Revamp", "Mobile App"]
+  },
+  {
+    id: 2,
+    name: "Sara",
+    department: "Development",
+    salary: 80000,
+    projects: ["E-Commerce", "CRM"]
+  },
+  {
+    id: 3,
+    name: "Mike",
+    department: "Design",
+    salary: 70000,
+    projects: ["Dashboard", "UI Revamp"]
+  },
+  {
+    id: 4,
+    name: "Emma",
+    department: "Development",
+    salary: 90000,
+    projects: ["CRM", "Analytics"]
+  },
+  {
+    id: 5,
+    name: "David",
+    department: "QA",
+    salary: 50000,
+    projects: ["Automation"]
+  }
+];
+
+const [first,second,third,fourth,fifth] = employees
+
+console.log(first.name)
+console.log(second)
+console.log(third)
+console.log(fourth)
+console.log(fifth)
 
 
 
