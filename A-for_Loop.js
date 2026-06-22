@@ -166,17 +166,19 @@
 
 // Example 16 (Print the Pattern){
 
-for(let i = 1; i <=5; i++) {
+for(let i=5; i>=1; i--) {
 
     let pattern = "";
 
-    for(let j=1; j<=i ; j++){ 
+    for(let j=1; j<=i; j++) {
 
-        pattern += "*";
+        pattern +="*";
+
     }
 
     console.log(pattern)
 }
+
 
 
 
