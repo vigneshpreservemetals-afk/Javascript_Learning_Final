@@ -93,15 +93,31 @@
 // Example 8 (Arrow Function in objects)
 
 
+// const car = {
+
+//     brand : "Skoda",
+//     model : "Slavia",
+//     varient : "prestige",
+//     getfullName: () => {
+//         return car.brand + ' ' + car.model + ' ' + car.varient;
+//     }
+// };
+
+
+// console.log(car.getfullName())
+
 const car = {
 
     brand : "Skoda",
     model : "Slavia",
     varient : "prestige",
-    getfullName: () => {
-        return car.brand + ' ' + car.model + ' ' + car.varient;
+
+    getfullName() {
+        return this.brand + ' ' + this.model + ' ' + this.varient;
     }
-};
+
+}
 
 
 console.log(car.getfullName())
+
